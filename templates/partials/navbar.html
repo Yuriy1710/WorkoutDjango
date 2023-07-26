@@ -2,7 +2,7 @@
 
 <nav class="border-gray-200 bg-blue-950 dark:bg-gray-900">
   <div class="flex flex-wrap items-center justify-between p-1 px-4 mx-auto max-w-screen-2xl">
-  <a href="#">
+  <a href="{% url 'index' %}">
       <img src="{% static 'images/logo.png' %}" width="100px" />
       
   </a>
@@ -43,25 +43,25 @@
     <ul class="flex flex-col p-4 mt-4 font-medium md:p-0 md:flex-row md:space-x-8 md:mt-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
       <div class="flex items-center space-x-5">
       <li>
-        <a
-      class="flex transition-colors duration-300 cursor-pointer text-gray-50 hover:text-rose-400"
-    >
-      Home
-    </a>
+        <a href="{% url 'index' %}"
+          class="flex transition-colors duration-300 cursor-pointer text-gray-50 hover:text-rose-400"
+        >
+          Home
+        </a>
       </li>
       <li>
-        <a
-      class="flex font-semibold transition-colors duration-300 cursor-pointer text-gray-50 hover:text-rose-400"
-    >
-      Exercises
-    </a>
+        <a href="{% url 'exercise_list' %}"
+          class="flex font-semibold transition-colors duration-300 cursor-pointer text-gray-50 hover:text-rose-400"
+        >
+          Exercises
+        </a>
       </li>
       <li>
-        <a
-      class="flex transition-colors duration-300 cursor-pointer text-gray-50 hover:text-rose-400"
-    >
-      Workouts
-    </a>
+        <a href="{% url 'workout_list' %}"
+          class="flex transition-colors duration-300 cursor-pointer text-gray-50 hover:text-rose-400"
+        >
+          Workouts
+        </a>
       </li>
       <li>
         
