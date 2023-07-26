@@ -14,8 +14,13 @@
 <body
   class="bg-amber-700"
   hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'>
+
+  <nav>
+    {% include 'partials/navbar.html' %}
+  </nav>
   
   <div class="mt-4">
+
     {% block content %}
     {% endblock content %}
   </div>
